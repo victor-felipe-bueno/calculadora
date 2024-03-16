@@ -1,0 +1,16 @@
+nome = input("Digite seu nome: ")
+peso = float(input("Digite o seu peso em quilogramas: "))
+altura = float(input("Digite a sua altura em centimetros: "))
+
+# Calcula o IMC
+imc = (peso*10000) / altura **2
+
+# Verifica a categoria do IMC e exibe a mensagem correspondente
+if imc < 18.5:
+    print('Senhor(a)', nome ,'você está abaixo do peso.')
+elif imc < 25:
+    print('Senhor(a)', nome ,'você está com peso normal.')
+elif imc < 30:
+    print('Senhor(a)', nome ,'você está com sobrepeso.')
+else:
+    print('Senhor(a)', nome ,'você está obeso(a).')
