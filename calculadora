@@ -1,0 +1,32 @@
+acao = input('Ola,escolha uma operação entra soma,subtração,multiplicação e divisão: ')
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input('Digite o segundo número:'))
+if acao in ['soma', 'SO', 'so', 'mais', 'Mais', 'mais']:
+  resultado = num1 + num2
+  print('O resultado da soma é:', resultado)
+elif acao in ['subtração', 'SU' ,'su', 'menos', 'Menos', 'MENOS']:
+  resultado = num1 - num2
+  print('O resultado da subtração é:', resultado)
+elif acao in ['multiplicação', 'MU' ,'mu', 'VEZES', 'Vezes', 'vezes']:
+  resultado = num1 * num2
+  print('O resultado da multiplicação é:', resultado)
+elif acao in ['divisão', 'DI', 'di', 'DIVISÃO', 'divisao', 'Divisao'
+              , 'DIVISAO', 'divisão', 'Divisão']:
+  resultado = num1 / num2
+  print('O resultado da divisão é:', resultado)
+elif acao in ['potenciação', 'PO', 'po', 'potencia', 'Potencia', 'POTENCIA'
+              , 'Potenciação', 'POTENCIAÇÃO',  'POTENCIACAO', 'potenciacao'
+              , 'POTENCIAÇAO', 'Potenciação'
+              , 'potenciaçao']:
+  resultado = num1 ** num2
+  print('O resultado da potenciação é:', resultado)
+elif acao in ['radiciação', 'RA', 'ra', 'raiz', 'Raiz','RAIZ', 'Radiciação'
+              , 'RADICIAÇÃO', 'radicacao','Radiciacao', 'RADIACAO']:
+  resultado = num1 ** (1/num2)
+  print('O resultado da radiciação é:', resultado)
+else:
+  print('Operação inválida.')
+#perguntar ao úsuario se deseja continuar
+continuar = input('Deseja continuar? (sim/não): ')
+if continuar.lower() != 'sim':
+  print('Obrigado por usar a calculadora!')
